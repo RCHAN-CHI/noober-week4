@@ -7,7 +7,29 @@ async function pageLoaded() {
   
   // 🔥 start here: write code to loop through the rides
   
+  function renderNoober(ride) {
+    let outputElement = document.querySelector('.rides')
+
+  }
+
+  if (ride.length > 1) {
+    levelOfService = 'Noober Pool'
+  } else if (ride[0].purpleRequested) {
+    levelOfService = 'Noober Purple'
+  } else if (ride[0].numberOfPassengers > 3) {
+    levelOfService = 'Noober XL'
+  } else {
+    levelOfService = 'Noober X'
+  }
+
+  let rides = response.json
+for (let i= 0; i< json.length; i++) {
+  ride = json[i]
+}
+
+
 }
 
 window.addEventListener('DOMContentLoaded', pageLoaded)
-
+ let outputElement = document.querySelector('.rides')
+  outputElement.insertAdjacentHTML('beforeend',<body> ${json}</body>)
